@@ -1,0 +1,31 @@
+{
+   "name": "usercode",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "jest": {
+      "transform": {
+         "^.+\\.(js|jsx)$": "babel-jest"
+      },
+      "setupFilesAfterEnv": [
+         "jest-expect-message"
+      ]
+   },
+   "scripts": {
+      "start": "parcel",
+      "start-dev": "parcel src/index.html --open -p 8080",
+      "build": "parcel build"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "parcel": "^2.12.0",
+      "process": "^0.11.10"
+   },
+   "dependencies": {
+      "react": "^18.2.0",
+      "react-bootstrap": "^2.8.0",
+      "react-dom": "^18.2.0"
+   }
+}
